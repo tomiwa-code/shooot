@@ -1,0 +1,71 @@
+.floatNavContainer {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    z-index: 99;
+    overflow: hidden;
+  }
+
+.floatNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px 30px;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.floatNav a {
+    line-height: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: var(--smooth-transition);
+}
+
+.floatNav a:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.floatNav a.active {
+    background: var(--secondary-color);
+    border-radius: 5rem;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 1024px) {
+
+    .floatNav {
+        padding: 13px 28px;
+    }
+
+    .floatNav a {
+        font-size: 1.4rem;
+        padding: 8px;
+    }
+
+    .floatNav a:not(:last-child) {
+        margin-right: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .floatNav {
+        padding: 10px 25px;
+    }
+
+    .floatNav a {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    .floatNav a:not(:last-child) {
+        margin-right: 1rem;
+    }
+}

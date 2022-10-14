@@ -1,0 +1,86 @@
+#footer {
+  width: 100% !important;
+  background: var(--secondary-color);
+  margin-top: 50px;
+  text-align: center;
+}
+
+.wrapper .logoHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .logoHolder img {
+  width: 55px;
+  margin-right: 10px;
+}
+
+.wrapper .logoHolder p {
+  font-size: 3rem;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+.wrapper .footerNav {
+  margin-bottom: 30px;
+}
+
+.wrapper .footerNav li:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.wrapper .footerNav li a {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.wrapper .footerSocial {
+  margin-bottom: 50px;
+}
+
+.wrapper .footerSocial span {
+  display: inline-block;
+}
+
+.wrapper .footerSocial span a {
+  font-size: 3rem;
+  color: var(--white-color);
+}
+
+.wrapper .footerSocial span:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.wrapper .endLine {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .logoHolder img {
+    width: 45px;
+  }
+
+  .wrapper .logoHolder p {
+    font-size: 2.3rem;
+  }
+
+  .wrapper .footerNav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .wrapper .footerNav li {
+    margin: 0px !important;
+  }
+
+  .wrapper .footerNav li a {
+    font-size: 1rem;
+  }
+}

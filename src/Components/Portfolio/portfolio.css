@@ -1,0 +1,104 @@
+.wrapper .portfolioGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 50px 100px;
+    row-gap: 35px;
+}
+
+.wrapper .portfolioGallery .portfolioImages {
+    width: 270px;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .portfolioGallery .portfolioImages img {
+    position: absolute;
+}
+
+.wrapper .portfolioGallery .portfolioImages .firstImg {
+    width: 270px;
+}
+
+.wrapper .portfolioGallery .portfolioImages .two {
+    margin-top: 100px;
+}
+
+.wrapper .portfolioGallery .portfolioImages .three {
+    width: 300px;
+}
+
+.wrapper .portfolioGallery .portfolioImages .secondImg {
+    width: 270px;
+    opacity: 0;
+}
+
+.wrapper .portfolioGallery .portfolioImages .threeB {
+    width: 350px;
+}
+
+.wrapper .portfolioGallery .portfolioImages .four {
+    margin-top: 80px;
+}
+
+.wrapper .portfolioGallery .portfolioImages .fourB {
+    width: 400px;
+}
+
+.wrapper .portfolioGallery .fifth img {
+    width: 300px !important;
+}
+
+.wrapper .portfolioGallery .portfolioImages:hover .firstImg {
+    opacity: 0;
+}
+
+.wrapper .portfolioGallery .portfolioImages:hover .secondImg {
+    opacity: 1;
+}
+
+.wrapper .portfolioBtn {
+    padding: 13px 20px;
+    background: var(--secondary-color);
+    font-size: 1rem;
+    border-radius: 0 12px 0 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--smooth-transition);
+}
+
+.wrapper .portfolioBtn a{
+    color: var(--primary-color);
+}
+
+.wrapper .portfolioBtn:hover {
+    border-radius: 12px 0 12px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper .portfolioGallery {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .wrapper .portfolioGallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .wrapper .portfolioGallery {
+        grid-template-columns: 1fr;
+    }
+}

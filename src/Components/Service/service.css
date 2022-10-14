@@ -1,0 +1,129 @@
+.wrapper .services  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    padding: 50px 100px 50px 90px;
+}
+
+.wrapper .services .containerService {
+    position: relative;
+    width: 300px;
+    border-radius: 8px;
+    background: var(--secondary-color);
+    padding: 25px;
+    text-transform: capitalize;
+}
+
+.wrapper .services .containerService  h5 {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.wrapper .services .containerService  .sideDesign {
+    position: absolute;
+    background: var(--primary-color);
+    width: 15px;
+    height: 150px;
+    border-radius: 0 10px 10px 0 ;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.wrapper .services .containerService .priceList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .services .containerService .priceList:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.wrapper .services .containerService .priceList .packageShot {
+    text-align: left;
+}
+
+.wrapper .services .containerService .priceList .packageShot span {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+ 
+.wrapper .services .containerService .priceList .packageShot p {
+    color: var(--white-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.wrapper .services .containerService .priceList button {
+    padding: 8px 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper .services  {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wrapper .services .containerService {
+        width: 270px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .wrapper .services  {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wrapper .services .containerService {
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .wrapper .services .containerService {
+        width: 270px;
+        padding: 20px;
+    }
+    
+    .wrapper .services .containerService  h5 {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .wrapper .services .containerService  .sideDesign {
+        width: 10px;
+        height: 140px;
+    }
+    
+    .wrapper .services .containerService .priceList:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    
+    .wrapper .services .containerService .priceList .packageShot span {
+        font-size: 0.8rem;
+    }
+     
+    .wrapper .services .containerService .priceList .packageShot p {
+        color: var(--white-color);
+        font-size: 0.7rem;
+    }
+    
+    .wrapper .services .containerService .priceList button {
+        padding: 5px 10px;
+    }
+}

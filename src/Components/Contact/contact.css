@@ -1,0 +1,143 @@
+.wrapper .contact-contact {
+  display: grid;
+  grid-template-columns: 65% 25%;
+  padding: 50px 0 50px 0;
+  position: relative;
+}
+
+.wrapper .emailMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper .emailMe .senderDetails {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .emailMe .senderDetails input {
+  width: 48%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background: transparent;
+  border: 2px solid var(--grey-color);
+}
+
+.wrapper .emailMe .title {
+  width: 80%;
+}
+
+.wrapper .emailMe .title input,
+textarea {
+  width: 100%;
+}
+
+.wrapper .emailMe .title input,
+textarea {
+  background: transparent;
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: 2px solid var(--grey-color);
+  margin-bottom: 30px;
+}
+
+.wrapper .emailMe textarea {
+  width: 80%;
+  height: 250px;
+}
+
+.wrapper .emailMe button {
+  width: 80%;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper .contactSocial div {
+  width: 100%;
+  background: var(--secondary-color);
+  padding: 35px;
+  border-radius: 4px;
+}
+
+.wrapper .contactSocial div:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.wrapper .contactSocial span {
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+
+.wrapper .contactSocial p {
+  color: var(--white-color);
+}
+
+.wrapper .mailSent {
+  position: fixed;
+  right: 40px;
+  top: 50px;
+  width: 200px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  color: var(--white-color);
+  cursor: pointer;
+  transform: translateX(120%) ;
+  transition: var(--smooth-transition);
+  z-index: 99;
+}
+
+.wrapper .mailSent svg {
+  font-size: 1.2rem;
+  fill: var(--white-color);
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper .contact-contact {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .wrapper .emailMe .senderDetails {
+    width: 100%;
+  }
+
+  .wrapper .emailMe .title {
+    width: 100%;
+  }
+
+  .wrapper .emailMe textarea {
+    width: 100%;
+  }
+
+  .wrapper .emailMe button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .emailMe .senderDetails {
+    display: block;
+  }
+
+  .wrapper .emailMe .senderDetails input {
+    width: 100%;
+  }
+
+  .wrapper .emailMe .senderDetails input:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
